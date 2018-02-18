@@ -1,0 +1,12 @@
+Once you have your toolchain set up:
+
+1) Clone repository
+2) Use flashrom.sh to flash GB/GBC rom
+3) Setup and Compile project using `make menuconfig && make -j6`
+4) Flash using `make flash`
+5) Monitor logcat using `make monitor`
+
+---
+NOTE:
+- Ensure Flash device is '/dev/ttyUSB0' else change in flashrom.sh and sdkconfig (in 'menuconfig > serial flasher...')
+- Flash baud rate is set to 921600
